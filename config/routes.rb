@@ -1,0 +1,12 @@
+OauthClientDemo::Application.routes.draw do
+
+  root :to => 'home#index'
+  match '/bye', :to => 'home#bye', :as => 'bye'
+
+  # omniauth
+  match '/auth/:provider/callback', :to => 'user_sessions#create'
+  match '/auth/failure', :to => 'user_sessions#failure'
+
+  # Custom logout
+  match '/logout', :to => 'user_sessions#destroy'
+end

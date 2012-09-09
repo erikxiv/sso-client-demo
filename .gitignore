@@ -1,0 +1,6 @@
+.bundle
+.env
+Procfile
+db/*.sqlite3
+log/*.log
+tmp/**/*

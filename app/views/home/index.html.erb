@@ -1,0 +1,11 @@
+<div id="page">
+	<div class="top">
+		Welcome <%= @current_user.info.first_name %>, you are user #<%= @current_user.uid %> <%= link_to "(Sign out)", "/logout", :method => :delete %>
+	</div>
+<div id="footer">
+Thanks to <%= link_to "Jurgen Appelo","http://www.jurgenappelo.com" %> for the icons,
+<%= link_to "Plataformatec et al","https://github.com/plataformatec/devise"%> for Devise,
+<%= link_to "Intridea","https://github.com/intridea/omniauth"%> for OmniAuth and
+<%= link_to "Josh Software","http://blog.joshsoftware.com/2010/12/16/multiple-applications-with-devise-omniauth-and-single-sign-on/"%> for tying it all together.
+</div>
+
